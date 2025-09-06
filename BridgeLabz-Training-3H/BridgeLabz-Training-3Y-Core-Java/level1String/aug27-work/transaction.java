@@ -1,7 +1,6 @@
 import java.util.*;
-
-public class transaction {
-
+public class transaction{
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("bro size dalo:- ");
@@ -15,19 +14,20 @@ public class transaction {
         sc.close();
     }
 
-    public static int balance(int[] arr) {
-        int amt = 0;
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] > 0) {
+    public static int balance(int[] arr){
+        int amt=0;
+        for(int i=0; i<arr.length; i++){
+            
+            if(arr[i] > 0){   
                 amt += arr[i];
-                System.out.println("Deposit of " + arr[i] + " and balance = " + amt);
-            } else {
+                System.out.println("Deposit of "+arr[i]+" and balance = "+amt);
+            }
+            else{             
                 amt += arr[i];
-                System.out.println("Withdrawal of " + (arr[i]) + " and balance = " + amt);
+                System.out.println("Withdrawal of "+(arr[i])+" and balance = "+amt);
             }
 
-            if (amt < 0) {
+            if(amt < 0){
                 System.out.println("Bro overdraft hogyaaaa");
             }
         }

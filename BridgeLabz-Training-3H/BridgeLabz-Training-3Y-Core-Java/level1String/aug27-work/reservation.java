@@ -14,7 +14,7 @@ public class reservation {
         String train = "";
         int seats = 5;
 
-        switch (choice) {
+        switch(choice) {
             case 1:
                 train = "Shatabdi Express";
                 break;
@@ -41,8 +41,8 @@ public class reservation {
             System.out.print("Enter number of passengers: ");
             int n = sc.nextInt();
 
-            for (int i = 1; i <= n; i++) {
-                if (booked < seats) {
+            for(int i=1; i<=n; i++) {
+                if(booked < seats) {
                     booked++;
                     System.out.println("Seat booked for passenger " + i);
                 } else {
@@ -55,6 +55,6 @@ public class reservation {
             System.out.println("Waiting = " + waiting);
 
             System.out.print("Do you want to book more?yes...no): ");
-        } while (sc.next().equalsIgnoreCase("yes"));
+        } while(sc.next().equalsIgnoreCase("yes"));
     }
 }
